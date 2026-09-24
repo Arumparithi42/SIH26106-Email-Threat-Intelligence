@@ -1,0 +1,35 @@
+Return-Path: <sih-demo-ceo-office@outlook.com>
+Received: from mx1.corp.example (mx1.corp.example [10.20.0.5])
+	by mbox.corp.example (Postfix) with ESMTP id 2D3E4F5A6B
+	for <finance@corp.example>; Thu, 24 Sep 2026 04:31:40 +0000 (UTC)
+Authentication-Results: mx1.corp.example;
+	spf=pass smtp.mailfrom=outlook.com;
+	dkim=none;
+	dmarc=pass header.from=outlook.com
+Received: from EUR05-AM6-obe.outbound.protection.outlook.com (mail-am6eur05olkn2021.outbound.protection.outlook.com [40.92.58.21])
+	by mx1.corp.example (Postfix) with ESMTPS id 3E4F5A6B7C
+	for <finance@corp.example>; Thu, 24 Sep 2026 04:31:38 +0000 (UTC)
+From: "Rajesh Menon, CEO" <sih-demo-ceo-office@outlook.com>
+Reply-To: <sih-demo-ceo-private@gmail.com>
+To: finance@corp.example
+Subject: Urgent and confidential - vendor payment today
+Date: Thu, 24 Sep 2026 10:01:30 +0530
+Message-ID: <PAXP193MB1234.sihdemo@PAXP193MB1234.EURP193.PROD.OUTLOOK.COM>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hi,
+
+I am in a board meeting and cannot take calls. We are closing an acquisition and I need you
+to process an urgent wire transfer of Rs 18,40,000 to our new vendor today.
+
+Please use the updated bank account details below (the vendor changed banks last week):
+Beneficiary: Northstar Advisory Services
+Account number: 000000000000 (demo)
+IFSC: DEMO0000000
+
+Keep this strictly confidential until the deal is announced and do not discuss it with anyone.
+Reply to me once the transfer is done.
+
+Rajesh
+Sent from my phone

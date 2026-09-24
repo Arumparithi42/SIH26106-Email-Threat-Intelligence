@@ -1,0 +1,2 @@
+# keep sample emails byte-exact (CRLF, DKIM signature)
+*.eml -text

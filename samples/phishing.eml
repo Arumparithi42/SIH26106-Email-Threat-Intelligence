@@ -1,0 +1,47 @@
+Return-Path: <bounce@mailer-ntbamk.example>
+Received: from mx1.corp.example (mx1.corp.example [10.20.0.5])
+	by mbox.corp.example (Postfix) with ESMTP id 5A1B2C3D4E
+	for <analyst@corp.example>; Tue, 22 Sep 2026 11:02:41 +0000 (UTC)
+Authentication-Results: mx1.corp.example;
+	spf=fail (sender IP is 185.220.101.47) smtp.mailfrom=mailer-ntbamk.example;
+	dkim=none (message not signed);
+	dmarc=fail (p=none) header.from=ntbamk.example
+Received: from ntbamk.example (unknown [185.220.101.47])
+	by mx1.corp.example (Postfix) with ESMTP id 9F8E7D6C5B
+	for <analyst@corp.example>; Tue, 22 Sep 2026 11:02:39 +0000 (UTC)
+From: "NTBank Security Team" <security@ntbamk.example>
+Reply-To: <verify-desk@ntbank-support.example>
+To: analyst@corp.example
+Subject: URGENT: Your NTBank account has been suspended
+Date: Tue, 22 Sep 2026 11:15:00 +0000
+Message-ID: <a81c9f00e1@localhost.localdomain>
+X-Mailer: PHPMailer 6.0.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="p1"
+
+--p1
+Content-Type: text/plain; charset="utf-8"
+
+Dear Customer,
+
+We detected unusual sign-in activity and your NetBanking account has been suspended.
+To restore access you must verify your identity within 24 hours, otherwise the account
+will be permanently closed.
+
+Click here to verify your account: http://ntbank-secure-verify.example/login/verify.php?id=88341
+
+You will be asked to confirm your customer ID, password and the OTP sent to your phone.
+
+NTBank Security Team
+--p1
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear Customer,</p>
+<p>We detected <b>unusual sign-in activity</b> and your NetBanking account has been <b>suspended</b>.</p>
+<p>To restore access you must verify your identity <b>within 24 hours</b>, otherwise the account will be permanently closed.</p>
+<p><a href="http://ntbank-secure-verify.example/login/verify.php?id=88341">https://www.ntbank.example/secure/verify</a></p>
+<p>You will be asked to confirm your customer ID, password and the OTP sent to your phone.</p>
+<p>NTBank Security Team</p>
+</body></html>
+--p1--

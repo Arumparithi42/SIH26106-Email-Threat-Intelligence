@@ -1,0 +1,47 @@
+Return-Path: <no-reply@share-docs.example>
+Received: from mx1.corp.example (mx1.corp.example [10.20.0.5])
+	by mbox.corp.example (Postfix) with ESMTP id 4F5A6B7C8D
+	for <analyst@corp.example>; Thu, 24 Sep 2026 09:48:02 +0000 (UTC)
+Authentication-Results: mx1.corp.example;
+	spf=softfail smtp.mailfrom=share-docs.example;
+	dkim=none;
+	dmarc=none header.from=share-docs.example
+Received: from relay7.share-docs.example (relay7.share-docs.example [185.220.101.47])
+	by mx1.corp.example (Postfix) with ESMTP id 5A6B7C8D9E
+	for <analyst@corp.example>; Thu, 24 Sep 2026 09:48:00 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by relay7.share-docs.example with SMTP id x1;
+	Thu, 24 Sep 2026 07:21:44 +0000
+From: "Cloud Drive" <no-reply@share-docs.example>
+To: analyst@corp.example
+Subject: A document has been shared with you
+Date: Thu, 24 Sep 2026 07:21:40 +0000
+Message-ID: <share.7788@share-docs.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="s1"
+
+--s1
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>A colleague shared "Salary_Revision_2026.pdf" with you.</p>
+<p><a href="http://185.220.101.47:8080/drive/view.php?doc=salary">Open document</a></p>
+<p>Mirror: <a href="http://xn--ntbnk-sqa.example/login">http://ntbank.example/login</a></p>
+<p>Backup link: http://ntbank.example@203.0.113.9/secure/signin</p>
+<p>Portal: https://ntbank.example.docs-share-login.example/account/verify</p>
+</body></html>
+--s1
+Content-Type: application/pdf; name="Shared_Document.pdf.js"
+Content-Disposition: attachment; filename="Shared_Document.pdf.js"
+Content-Transfer-Encoding: base64
+
+Ly8gU0lIMjYxMDYgREVNTyBQTEFDRUhPTERFUiAtIGluZXJ0IHRleHQsIG5vdCBmdW5jdGlvbmFs
+IGNvZGUuCg==
+--s1
+Content-Type: application/vnd.ms-word.document.macroEnabled.12; name="Q3_report.docm"
+Content-Disposition: attachment; filename="Q3_report.docm"
+Content-Transfer-Encoding: base64
+
+UEsDBFNJSDI2MTA2IGRlbW8gcGxhY2Vob2xkZXIgYnl0ZXMgLSBub3QgYSByZWFsIGRvY3VtZW50
+AAAAAAAAAAAAAAAAAAAAAA==
+--s1--

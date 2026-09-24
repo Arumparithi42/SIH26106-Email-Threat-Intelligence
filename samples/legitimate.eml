@@ -1,0 +1,52 @@
+Return-Path: <bounce@ntbank.example>
+Received: from mx1.corp.example (mx1.corp.example [10.20.0.5])
+	by mbox.corp.example (Postfix) with ESMTP id 4Q7kZt1xYz
+	for <analyst@corp.example>; Tue, 22 Sep 2026 03:45:09 +0000 (UTC)
+Authentication-Results: mx1.corp.example;
+	spf=pass smtp.mailfrom=bounce@ntbank.example;
+	dkim=pass header.d=ntbank.example header.s=demo2026;
+	dmarc=pass (p=reject) header.from=ntbank.example
+Received: from a8-10.smtp-out.amazonses.com (a8-10.smtp-out.amazonses.com [54.240.8.10])
+	by mx1.corp.example (Postfix) with ESMTPS id 7B2C1400A1
+	for <analyst@corp.example>; Tue, 22 Sep 2026 03:45:05 +0000 (UTC)
+Received: from app01.ntbank.example (app01.ntbank.example [10.1.2.3])
+	by email-smtp.ntbank.example with ESMTP id 0100abcd;
+	Tue, 22 Sep 2026 03:45:03 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=ntbank.example;
+ i=@ntbank.example; q=dns/txt; s=demo2026; t=1790249552; h=from : to :
+ subject : date : message-id;
+ bh=dOy7Xv51vs6bYon9m+z9b95DuHlTVvhsBCqDLlexaC4=;
+ b=les8jAgGqR/hmRCz1IEcC4hcsG0najmtmrKNb1szrp8xtnQ7v5djMzpRX3PwXARjkbAh3
+ fUOIuJ0/x8/8jSpXo/lOXB7m2ZRJg86WK2/ZAo7rLVTu6p5IbgVMcHCrUzfJl4AUv6TTety
+ 1pv6vBuhYjHU4UUWhyQiEXy7G7Q0GBQsKPqZCzJ/+KJalTqfbuBHTOpXRYrDcWdVR0g3rsp
+ aNBVtmqxgJsI7VXhJfZ3heyDheguYSBfmgEja/assDptLIwgrP13wggKZ2tHrOFy5IFt2Lh
+ e28F80H4JVP4F5i5IAhaUvpdGp/fBBYIqE/P7tc5yu7YqOvVqTHfdfQUCIIg==
+From: "National Trust Bank" <alerts@ntbank.example>
+To: analyst@corp.example
+Subject: Your September account statement is ready
+Date: Tue, 22 Sep 2026 09:15:02 +0530
+Message-ID: <20260922034502.4471@mail.ntbank.example>
+X-Mailer: NTB Notification Service 3.2
+Content-Type: multipart/alternative; boundary="b1"
+MIME-Version: 1.0
+
+--b1
+Content-Type: text/plain; charset="utf-8"
+
+Dear customer,
+
+Your account statement for September 2026 is now available in NetBanking.
+You can view it at https://portal.ntbank.example/statements after logging in as usual.
+No action is required. We will never ask for your password or OTP by email.
+
+Regards,
+National Trust Bank - Customer Communications
+--b1
+Content-Type: text/html; charset="utf-8"
+
+<html><body><p>Dear customer,</p>
+<p>Your account statement for September 2026 is now available in NetBanking.
+You can view it at <a href="https://portal.ntbank.example/statements">portal.ntbank.example/statements</a> after logging in as usual.</p>
+<p>No action is required. We will never ask for your password or OTP by email.</p>
+<p>Regards,<br>National Trust Bank - Customer Communications</p></body></html>
+--b1--

@@ -1,0 +1,35 @@
+Return-Path: <root@vps-4471.hosting.example>
+Received: from mx1.corp.example (mx1.corp.example [10.20.0.5])
+	by mbox.corp.example (Postfix) with ESMTP id 1C2D3E4F5A
+	for <analyst@corp.example>; Wed, 23 Sep 2026 06:40:12 +0000 (UTC)
+Authentication-Results: mx1.corp.example;
+	spf=fail smtp.mailfrom=vps-4471.hosting.example;
+	dkim=fail (signature verification failed) header.d=ntbank.example;
+	dmarc=fail (p=reject) header.from=ntbank.example
+Received: from vps-4471.hosting.example (unknown [185.220.101.33])
+	by mx1.corp.example (Postfix) with ESMTP id 6B7C8D9E0F
+	for <analyst@corp.example>; Wed, 23 Sep 2026 06:40:09 +0000 (UTC)
+Received: from mail.ntbank.example (mail.ntbank.example [54.240.8.10])
+	by relay.ntbank.example with ESMTPS id 00ff00ff;
+	Wed, 23 Sep 2026 07:55:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ntbank.example; s=demo2026;
+	h=from:to:subject:date:message-id; bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+	b=Zm9yZ2VkLXNpZ25hdHVyZS1mb3ItZGVtby1vbmx5LW5vdC1hLXJlYWwtc2lnbmF0dXJl
+From: "National Trust Bank" <alerts@ntbank.example>
+To: analyst@corp.example
+Subject: Official notice: update to your account terms
+Date: Wed, 23 Sep 2026 06:39:58 +0000
+Message-ID: <1695451198.4471@vps-4471.hosting.example>
+X-Mailer: PHPMailer 5.2.9
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Dear valued customer,
+
+This is an official communication from the compliance department of National Trust Bank,
+issued on behalf of the head office.
+
+Our account terms have been updated. For any questions, simply reply to this email and
+our customer care team will assist you.
+
+National Trust Bank

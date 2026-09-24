@@ -1,0 +1,3 @@
+# Throwaway DEMO key - not a secret, not published in DNS.
+# DNS name it would live at: demo2026._domainkey.ntbank.example
+v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8SIFz+BWJTuqIEBxfBEWg6+lSKpvFtURas7EKNEgimWPk6f5ZGum0lglXctNcF3jaWZxyj6UERLJ4+XK3ffHDIyrrCR8AAJVhPA7cA7h6sfdeIzi3LIHs4+lP1DZS/vRbLbJ169sAzgI03vDORcB4EonOixZ5a+6Q1Zu+UX4cQbH8jDKkQ1Lu4JSFuTTff+q7fNKh4M5C+sSLiLTe712AzPH9QFpXc3LC3CtLLNxil0To6f98yvZKSvbAzZtaLwTP+76lteq+AfFAmOoxs8hbudFhO6X7umTnNaepIMpWZLUQUQt7OSHF6ZOHqwWG7VM+pGe5UuLFeoNdxYgrwenjwIDAQAB

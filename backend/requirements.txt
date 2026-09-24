@@ -1,0 +1,31 @@
+# Web API
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-multipart==0.0.32
+httpx==0.28.1
+
+# Storage
+SQLAlchemy==2.0.54
+
+# Email forensics
+dnspython==2.8.0
+dkimpy==1.1.8
+pyspf==2.0.14
+email-validator==2.3.0
+tldextract==5.3.2
+
+# Intelligence / correlation
+geoip2==5.3.0
+networkx==3.6.1
+
+# Threat detection (ML/NLP)
+scikit-learn==1.9.1
+numpy==2.4.6
+
+# Reporting
+reportlab==5.0.1
+
+# Tests
+pytest==9.1.1
