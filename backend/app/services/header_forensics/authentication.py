@@ -23,6 +23,9 @@ from app.core.config import get_settings
 from app.core.utils import registrable_domain
 
 log = logging.getLogger(__name__)
+# dkimpy logs key-lookup failures at ERROR; we report them as a DKIM status instead
+_dkim_log = logging.getLogger(__name__ + ".dkimpy")
+_dkim_log.setLevel(logging.CRITICAL)
 
 DEFINITIVE = {"pass", "fail", "softfail", "neutral"}
 _TAG = re.compile(r"\b(spf|dkim|dmarc)=(\w+)", re.IGNORECASE)
@@ -127,7 +130,7 @@ def verify_dkim_signatures(raw: bytes, signatures: list[str]) -> list[dict]:
             return "".join(r.records).encode() if r.status == "success" else None
 
         try:
-            ok = dkim.DKIM(raw, logger=log).verify(idx=idx, dnsfunc=dnsfunc)
+            ok = dkim.DKIM(raw, logger=_dkim_log).verify(idx=idx, dnsfunc=dnsfunc)
             if ok:
                 status, evidence = "pass", "Signature verified with the published public key"
             elif state["dns"] in ("unavailable", "error", "disabled"):

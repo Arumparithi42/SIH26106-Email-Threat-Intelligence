@@ -87,6 +87,10 @@ def build_graph(analysis_id: str, parsed: dict, header: dict, intel: dict, risk_
     for d in intel["domain_intelligence"]:
         did = tg.node(d["id"], "domain", d["domain"], roles=d["roles"], age_days=d["registration"].get("age_days"),
                       lookalike_of=d.get("lookalike_of"), risk=risk_flags.get(d["id"]))
+        if "message_id_domain" in d["roles"]:
+            tg.edge(msg, did, "MESSAGE_ID_DOMAIN")
+        if "sending_host_domain" in d["roles"]:
+            tg.edge(msg, did, "SENDING_HOST_DOMAIN")
         for ip in d["resolved_ips"][:5]:
             tg.node(f"ip:{ip}", "ip", ip)
             tg.edge(did, f"ip:{ip}", "RESOLVES_TO")
